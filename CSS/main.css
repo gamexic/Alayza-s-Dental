@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+a {
+    cursor: pointer;
+}
+:root {
+    --dark-blue: #0A519A;
+    --light-blue: #368BE1;
+}
+
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #0A519A;
+}
+header .header-icons-container .icons-container {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+}
+header .header-icons-container .icons-container a:hover {
+    padding: 0.5px;
+    border-radius: 5px;
+    background-color: var(--light-blue);
+}
+header .header-icons-container img {
+    width: 40px;
+}
+header nav {
+    height: 90px;
+    background-color: #368BE1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+header nav .profile-logo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+header nav .profile-logo img {
+    height: 80px;
+    margin: 0 auto;
+}
+header nav .profile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+header nav .profile-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 0.4rem;
+    letter-spacing: 0.2rem;
+}
+header nav .profile-links a:hover {
+    padding-bottom: 6px;
+    border-bottom: 1.5px solid black;
+}
+
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+main .main-img {
+    height: 500px;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/4270362/pexels-photo-4270362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+main .main-img .welcome {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 300px;
+    grid-column: 2;
+    text-align: center;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 420px;
+    border-radius: 10px;
+    background: rgba(209, 210, 212, 0.4);
+}
+main .main-img .welcome h1, h2 {
+    color: var(--light-blue);
+    
+}
+main .main-img .welcome h1 {
+    margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: 1000;
+    letter-spacing: 0.3rem;
+}
+main .main-img .welcome h2 {
+    font-size: 5rem;
+    font-weight: 1000;
+    line-height: 5.5rem;
+    letter-spacing: 0.3rem;
+}
+
+main .main-services-container {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    background-color: white;
+    display: inline-block;
+}
+main .main-services-container div {
+    margin: auto;
+    margin-bottom: 50px;
+    border: 1px solid var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 444px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px var(--dark-blue);
+    padding: 2.2%;
+    max-width: 300px;
+}
+main .main-services-container div img {
+    height: 140px;
+    width: 100%;
+    border-radius: 5px;
+}
+main .main-services-container div h2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    color: black;
+}
+main .main-services-container div p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 12px;
+}
+main .main-services-container div a {
+    text-decoration: none;
+    background-color: var(--dark-blue);
+    margin: 0 auto;
+    padding: 10px 15px;
+    color: black;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 5px var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+main .main-services-container div .limpieza-button {
+    margin-top: 14px;
+}
+main .main-services-container div .endodoncia-button {
+    margin-top: 16px;
+}
+main .main-services-container div a:hover {
+    color: white;
+    box-shadow: 2px 2px 5px var(--dark-blue);
+}
+
+
+footer {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--light-blue);
+}
+footer .footer-left{
+    width: 100%;
+    background-color: var(--light-blue);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 520px;
+}
+footer .footer-left .footer-information-container {
+    grid-row: 1;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+footer .footer-left .footer-information-container div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 510px;
+}
+footer .footer-left .footer-information-container div img {
+    height: 125px;
+}
+footer .footer-left .footer-information-container div p {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+
+footer .footer-contact-information {
+    margin-top: 75px;
+    grid-row: 2;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+footer .footer-left .footer-contact-information {
+    max-width: 510px;
+}
+footer .footer-left .footer-contact-information .location {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+footer .footer-left .footer-contact-information .location .location-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-left .footer-contact-information .location .location-icon img {
+    width: 54px;
+}
+footer .footer-left .footer-contact-information .location div {
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 450px;
+}
+footer .footer-left .footer-contact-information .number-phone {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+footer .footer-left .footer-contact-information .number-phone .phone-icon {
+    grid-column: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-left .footer-contact-information .number-phone .phone-icon img {
+    width: 54px;
+}
+footer .footer-left .footer-contact-information .number-phone p {
+    font-size: 3rem;
+    margin-left: 4px;
+}
+footer .footer-left .footer-contact-information .number-phone div {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 450px;
+    grid-column: 2;
+}
+footer .footer-left .footer-contact-information div p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+footer .footer-right .map-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.main-ortodoncia {
+    width: 100%;
+}
+.main-ortodoncia .ortodoncia-img-container {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    background-color: rgb(231, 231, 231);
+}
+.main-ortodoncia .ortodoncia-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.main-ortodoncia .ortodoncia-info-container {
+    width: 100%;
+    height: auto;
+}
+.main-ortodoncia .ortodoncia-info-container .ortodoncia-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 1116px;
+    margin: 0 auto;
+}
+.main-ortodoncia .ortodoncia-info-container .ortodoncia-info h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    margin-bottom: 24px;
+    color: black;
+    border-bottom: 1px solid var(--light-blue);
+    padding: 0 12px;
+}
+.main-ortodoncia .ortodoncia-info-container .ortodoncia-info p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 24px;
+    color: black;
+}
+
+
+.main-nosotros {
+    width: 100%;
+    padding: 100px 20px;
+}
+.main-nosotros .nosotros-info-container {
+    background-color: rgb(231, 231, 231);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding: 10px;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: auto;
+}
+.main-nosotros .nosotros-info-container img {
+    width: 100%;
+    height: 92%;
+    max-width: 255px;
+    max-height: 245px;
+    align-self: center;
+}
+.main-nosotros .nosotros-info-container .nosotros-info {
+    padding: 5px;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-nosotros .nosotros-info-container .nosotros-info h2 {
+    font-size: 2rem;
+    font-weight: 1000;
+    letter-spacing: 0.15rem;
+    color: var(--light-blue);
+    border-bottom: 1px solid var(--dark-blue);
+    padding: 0px;
+    margin-bottom: 8px;
+}
+.main-nosotros .nosotros-info-container .nosotros-info p {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    line-height: 1.2rem;
+}
+
+.main-nosotros .nosotros-future-container {
+    height: auto;
+    width: 100%;
+}
+.main-nosotros .nosotros-future-container div {
+    height: auto;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-nosotros .nosotros-future-container .nosotros-future-mision {
+    margin: 60px auto;
+}
+.main-nosotros .nosotros-future-container .nosotros-future-vision {
+    margin-bottom: 60px;
+}
+.main-nosotros .nosotros-future-container h3 {
+    font-size: 2rem;
+    font-weight: 1000;
+    letter-spacing: 0.15rem;
+    color: var(--dark-blue);
+    border-bottom: 1px solid var(--light-blue);
+    padding: 0 8px;
+    margin-bottom: 12px;
+}
+.main-nosotros .nosotros-future-container p {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    line-height: 1.2rem;
+}
+.main-nosotros .nosotros-future-container img {
+    width: 100%;
+    height: 350px;
+}
+.main-nosotros .nosotros-future-container .nosotros-future-doodle {
+    max-width: 1300px;
+}

@@ -1,0 +1,123 @@
+@media screen and (min-width: 360px) {
+    footer .footer-contact-information {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .main-nosotros .nosotros-info-container img {
+        width: 100%;
+        height: 72%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main-nosotros .nosotros-future-container img {
+        height: 150px;
+    }
+}
+@media screen and (min-width: 477px) {
+    footer .footer-contact-information {
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .main-nosotros .nosotros-info-container .nosotros-info h2 {
+        font-size: 3rem;
+    }
+    .main-nosotros .nosotros-info-container .nosotros-info p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .main-nosotros .nosotros-future-container h3 {
+        font-size: 3rem;
+    }
+    .main-nosotros .nosotros-future-container p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+}
+@media screen and (min-width: 550px) {
+    footer .footer-contact-information {
+        margin-top: 20px;
+    }
+    main .main-img {
+        background-image: url("https://images.pexels.com/photos/6812524/pexels-photo-6812524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+    main .main-services-container {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 810px;
+    }
+    main .main-services-container div {
+        width: 45%;
+        max-width: 300px;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 673px) {
+    .main-nosotros .nosotros-info-container .nosotros-info p {
+        margin: auto;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .main-ortodoncia .ortodoncia-info-container .ortodoncia-info h2 {
+        font-size: 4rem;
+    }
+    .main-ortodoncia .ortodoncia-info-container .ortodoncia-info p {
+        font-size: 2rem;
+    }
+    .main-nosotros .nosotros-info-container .nosotros-info p {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .main-nosotros .nosotros-future-container p {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-nosotros .nosotros-future-container img {
+        height: 250px;
+    }
+}
+@media screen and (min-width: 900px) {
+    main .main-img {
+        background-image: url("https://winchesterhousedental.co.uk/wp-content/uploads/2019/11/cosmetic-dentistry-1024x683.jpg");
+    }
+}
+@media screen and (min-width: 1024px) {
+    main .main-services-container {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    main .main-services-container div {
+        width: 30%;
+        max-width: 400px;
+    }
+    footer {
+        display: flex;
+    }
+    footer .footer-right {
+        width: 100%;
+    }
+    footer .footer-right .map-1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
