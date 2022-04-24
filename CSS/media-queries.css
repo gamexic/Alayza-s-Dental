@@ -1,3 +1,13 @@
+@media screen and (max-width: 282px) {
+    footer .footer-left{ 
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 317px) {
+    footer .footer-left .footer-contact-information .number-phone { 
+        margin-top: 20px;
+    }
+}
 @media screen and (min-width: 360px) {
     footer .footer-contact-information {
         margin-top: 50px;
